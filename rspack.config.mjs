@@ -29,6 +29,16 @@ const config = {
   experiments: {
     css: true,
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        type: 'css/auto',
+        use: ['sass-loader'],
+      },
+    ]
+  },
 };
 
 export default config;
